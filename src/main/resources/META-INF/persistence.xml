@@ -6,9 +6,13 @@
     <persistence-unit name="oncourse">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
+         <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/test" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.user" value="sawada" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
             <property name="hibernate.show_sql" value="false" />
-        </properties>
+            </properties>
     </persistence-unit>
 
 </persistence>
